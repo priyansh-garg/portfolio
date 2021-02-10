@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+.homepage {
+	background-image: url("../../assets/4.jpg");
+	height: 100%;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	text-align: center;
+	justify-content: center;
+	opacity: 0.15;
+	animation: bgZoomAnim 10s linear infinite;
+}
+.bgZoomAnim {
+	@keyframes bgZoomAnim {
+		0% {
+			transform: scale(1);
+		}
+		49% {
+			transform: scale(1.1);
+		}
+		50% {
+			transform: scale(1.1);
+		}
+		0% {
+			transform: scale(1);
+		}
+	}
+}
+
+.glassEffect {
+	background: rgba(255, 255, 255, 0.15);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(5.5px);
+	-webkit-backdrop-filter: blur(5.5px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	width: 80%;
+	height: 43vw;
+	margin-left: 10%;
+	margin-top: 3vw;
+    position: fixed;
+}
+.heading {
+	animation: blinkAlign 4s linear infinite;
+	position: relative;
+	// text-align: center;
+	left: 16%;
+	padding: 4% 4%;
+	font-family: 'Share Tech Mono', monospace;
+	color: #120078;
+	// margin : 5% auto;
+	// top:1vw;
+	font-size: 3.5vw;
+	font-weight: bold;
+	opacity: 200%;
+}
+.headingAnimation1 {
+	animation: blink 4s linear infinite;
+}
+
+.headingAnimation2 {
+	position: relative;
+	left: -20%;
+	animation: blink 4s linear infinite;
+	animation-delay: -2s;
+}
+.blinkAlign {
+	@keyframes blinkAlign {
+		0% {
+			left: 20%;
+		}
+		49% {
+			left: 20%;
+		}
+		50% {
+			left: 16%;
+		}
+		99% {
+			left: 16%;
+		}
+		100% {
+			left: 20%;
+		}
+	}
+}
+.blink {
+	@keyframes blink {
+		0% {
+			opacity: 1;
+		}
+		30% {
+			opacity: 1;
+		}
+		35% {
+			opacity: 0.0;
+		}
+		40% {
+			opacity: 0.6;
+		}
+		42% {
+			opacity: 0;
+		}
+		44% {
+			opacity: 0.5;
+		}
+		45% {
+			opacity: 0;
+		}
+		46% {
+			opacity: 0.5;
+		}
+		47% {
+			opacity: 0;
+		}
+		48% {
+			opacity: 0.5;
+		}
+		49% {
+			opacity: 0;
+		}
+		49.5% {
+			opacity: 0.5;
+		}
+
+		50% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+}
+.profileimg {
+	height: 20%;
+	width: 20%;
+	border-radius: 50%;
+	top: 5vw;
+	left: 37.5%;
+	position: relative;
+}
