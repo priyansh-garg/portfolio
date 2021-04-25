@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+
+.card{
+
+    display: inline-block;
+    border-radius: 10%;
+    height: 25vw;
+    width: 20vw;
+    background: rgba( 125, 223, 253, 0.75 );
+    box-shadow: 0 4px 16px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.0px );
+    -webkit-backdrop-filter: blur( 5.0px );
+    // border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    opacity: 0.9;
+    position: relative;
+    top:0;
+    margin-left:-5vw;
+    left:0;
+    border: 2vw transparent;
+    margin-bottom: -2vw;
+    transition: 0.2s ease-out;
+    &:hover{
+        
+        // transform: scale(1.02);
+        transform: translateY(-1vw);
+        transition: 0.2s ease-out;
+        
+        // transition: transform 0.2s ease-out;
+        // margin-left: 1vw;
+        // left: 1vw ;
+        // margin-right: 1vw;
+    }
+    &:hover ~ .card{
+        left:5vw;
+        transition: 0.5s ease-out;
+    }
+    .title{
+        font-size: 2.5vw;
+        font-family: 'Share Tech Mono', monospace;
+        color:#023e7d;
+        text-align: center;
+        position: relative;
+        top:30%;
+        transition: 0.2s ease-out;
+        
+    }
+    .circular-bar{
+        position: relative;
+        left : 10%;
+        top: 5%;
+        opacity: 0;
+    }
+    
+}
+
+.card:hover .title{
+    transition: top 0.2s ease-out;
+    top:5%;
+}
+.card:hover .circular-bar{
+    opacity: 1;   
+}
+
+

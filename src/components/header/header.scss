@@ -4,10 +4,10 @@
     position: fixed;
     height: 10%;
     min-height: 30px;
-    padding-top:1%;
+    padding-top:1.5%;
     // background-color: #98ded9;
-    background: rgba( 125, 223, 253, 0.75 );
-box-shadow: 0 4px 16px 0 rgba( 31, 38, 135, 0.37 );
+    background: #90e0ef;
+box-shadow: 0 4px 16px 0;
 backdrop-filter: blur( 5.0px );
 -webkit-backdrop-filter: blur( 5.0px );
 // border-radius: 10px;
@@ -24,15 +24,16 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 .nav-bar-item{
     margin: 1px 2%;
-    color: #120078;
+    color: #023e7d;
+    // padding-top: 2%;
     // margin-top:100%;
     display: inline;
-    font-size: 3vw;
+    font-size: 2.5vw;
     font-family: 'Share Tech Mono', monospace;
     text-decoration: none;
     &:hover{
         opacity: 1;
-        color:#f6f6f6;
+        color:#d6eadf;
         text-decoration: underline;
     }
 }

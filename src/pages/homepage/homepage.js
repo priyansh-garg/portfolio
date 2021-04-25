@@ -3,9 +3,7 @@ import "./homepage.scss";
 import profimg from "../../assets/pgc.jpg";
 import DisplayTile from "../../components/displayTile/displayTile.js"
 // import tilebgimg from "../../assets/1.jpg";
-class homepage extends React.Component{
-
-    render(){
+function homepage(){
         return(
             <div >
             <div className="homepage"></div>
@@ -28,7 +26,7 @@ class homepage extends React.Component{
                 </div>
             </div>
         );
-    };
+    
 }
 
 export default homepage;
